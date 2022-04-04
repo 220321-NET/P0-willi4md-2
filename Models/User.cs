@@ -56,7 +56,10 @@ public class User
             catch (Exception e)
             {
                 // Write to log with error
-                Console.WriteLine(e.ToString());
+                using (StreamWriter w = File.AppendText("C:/Users/Matthew/Desktop/P0-TWO/DL/logs.txt"))
+                {
+                    Logger.Log(e.ToString(), w);
+                }
             }
 
             char firstLetter = responseToChar[0];

@@ -1,4 +1,6 @@
 namespace Models;
+using System;
+using System.IO;
 
 public class Options
 {
@@ -47,7 +49,11 @@ public class Options
             catch (Exception e)
             {
                 // Write to log with error
-                Console.WriteLine(e.ToString());
+                using (StreamWriter w = File.AppendText("C:/Users/Matthew/Desktop/P0-TWO/DL/logs.txt"))
+                {
+                    Logger.Log(e.ToString(), w);
+                }
+                goto OpenMenu;
             }
 
             char firstLetter = responseToChar[0];
@@ -55,6 +61,7 @@ public class Options
             switch (firstLetter)
             {
                 case '0':
+                    goto OpenMenu;
 
                 case '1':
                     CarsMenu carsmenu = new CarsMenu(true);
@@ -62,8 +69,19 @@ public class Options
                     goto OpenMenu;
 
                 case '2':
+                    MotorcyclesMenu motorcyclesmenu = new MotorcyclesMenu(true);
+                    motorcyclesmenu.OpenMotorcyclesMenu();
+                    goto OpenMenu;
 
                 case '3':
+                    BoatsMenu boatsmenu = new BoatsMenu(true);
+                    boatsmenu.OpenBoatsMenu();
+                    goto OpenMenu;
+
+                case '4':
+                    PlanesMenu planesMenu = new PlanesMenu(true);
+                    planesMenu.OpenPlanesMenu();
+                    goto OpenMenu;
 
                 case 'X':
                     break;
