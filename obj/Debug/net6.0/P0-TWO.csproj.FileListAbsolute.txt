@@ -1,0 +1,15 @@
+C:\Users\Matthew\Desktop\P0-TWO\bin\Debug\net6.0\P0-TWO.exe
+C:\Users\Matthew\Desktop\P0-TWO\bin\Debug\net6.0\P0-TWO.deps.json
+C:\Users\Matthew\Desktop\P0-TWO\bin\Debug\net6.0\P0-TWO.runtimeconfig.json
+C:\Users\Matthew\Desktop\P0-TWO\bin\Debug\net6.0\P0-TWO.dll
+C:\Users\Matthew\Desktop\P0-TWO\bin\Debug\net6.0\P0-TWO.pdb
+C:\Users\Matthew\Desktop\P0-TWO\obj\Debug\net6.0\P0-TWO.csproj.AssemblyReference.cache
+C:\Users\Matthew\Desktop\P0-TWO\obj\Debug\net6.0\P0-TWO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matthew\Desktop\P0-TWO\obj\Debug\net6.0\P0-TWO.AssemblyInfoInputs.cache
+C:\Users\Matthew\Desktop\P0-TWO\obj\Debug\net6.0\P0-TWO.AssemblyInfo.cs
+C:\Users\Matthew\Desktop\P0-TWO\obj\Debug\net6.0\P0-TWO.csproj.CoreCompileInputs.cache
+C:\Users\Matthew\Desktop\P0-TWO\obj\Debug\net6.0\P0-TWO.dll
+C:\Users\Matthew\Desktop\P0-TWO\obj\Debug\net6.0\refint\P0-TWO.dll
+C:\Users\Matthew\Desktop\P0-TWO\obj\Debug\net6.0\P0-TWO.pdb
+C:\Users\Matthew\Desktop\P0-TWO\obj\Debug\net6.0\P0-TWO.genruntimeconfig.cache
+C:\Users\Matthew\Desktop\P0-TWO\obj\Debug\net6.0\ref\P0-TWO.dll
