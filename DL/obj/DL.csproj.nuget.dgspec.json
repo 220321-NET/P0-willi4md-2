@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Matthew\\Desktop\\P0-TWO\\DL\\DL.csproj": {}
+    "C:\\Users\\Matthew\\Desktop\\P0-TWO\\DL\\DL.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Matthew\\Desktop\\P0-TWO\\DL\\DL.csproj": {
+    "C:\\Users\\Matthew\\Desktop\\P0-TWO\\DL\\DL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Matthew\\Desktop\\P0-TWO\\DL\\DL.csproj",
+        "projectUniqueName": "C:\\Users\\Matthew\\Desktop\\P0-TWO\\DL\\DL.csproj",
         "projectName": "DL",
-        "projectPath": "c:\\Users\\Matthew\\Desktop\\P0-TWO\\DL\\DL.csproj",
+        "projectPath": "C:\\Users\\Matthew\\Desktop\\P0-TWO\\DL\\DL.csproj",
         "packagesPath": "C:\\Users\\Matthew\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Matthew\\Desktop\\P0-TWO\\DL\\obj\\",
+        "outputPath": "C:\\Users\\Matthew\\Desktop\\P0-TWO\\DL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -41,7 +41,7 @@ public class User
         while (!hasAccount) 
         {
             Console.WriteLine("========================================");
-            Console.WriteLine("|        CAR DEALERSHIP LOGIN          |");
+            Console.WriteLine("|      GENERAL MOTORS DEALER LOGIN     |");
             Console.WriteLine("========================================");
             Console.WriteLine("Do you already have an account?  [Y]/[N] ");
 

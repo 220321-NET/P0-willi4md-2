@@ -40,3 +40,75 @@ Log Entry : 2:03:59 PM Monday, April 4, 2022
   :System.IndexOutOfRangeException: Index was outside the bounds of the array.
    at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
 -------------------------------
+
+Log Entry : 2:42:14 PM Monday, April 4, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.Options.OpenOptionsMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\Options.cs:line 47
+-------------------------------
+
+Log Entry : 2:49:10 PM Monday, April 4, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
+-------------------------------
+
+Log Entry : 4:52:43 PM Monday, April 4, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
+-------------------------------
+
+Log Entry : 4:52:44 PM Monday, April 4, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
+-------------------------------
+
+Log Entry : 4:52:45 PM Monday, April 4, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
+-------------------------------
+
+Log Entry : 5:43:39 PM Monday, April 4, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
+-------------------------------
+
+Log Entry : 5:43:40 PM Monday, April 4, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
+-------------------------------
+
+Log Entry : 5:43:40 PM Monday, April 4, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
+-------------------------------
+
+Log Entry : 5:44:28 PM Monday, April 4, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.Options.OpenOptionsMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\Options.cs:line 47
+-------------------------------
+
+Log Entry : 7:00:58 PM Monday, April 4, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
+-------------------------------
+
+Log Entry : 6:56:45 PM Tuesday, April 5, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
+-------------------------------
+
+Log Entry : 6:56:46 PM Tuesday, April 5, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
+-------------------------------
