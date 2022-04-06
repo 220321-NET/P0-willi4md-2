@@ -130,13 +130,12 @@ public class User
             goto Username;
         }
 
-        if (newUsername.Length < 3 || newUsername.Length > 12) {
-            Console.WriteLine("Username must be at least 3 characters and no more than 12.");
+        if (DBRepository.ValidateUsernameInput(newUsername)) {
+            Console.WriteLine("Username taken, please try again.");
             goto Username;
         }
 
         setUsername(newUsername);
-
         /**
         *
         * Password Setup for Account Creation.
@@ -162,7 +161,7 @@ public class User
         }
 
         setPassword(newPassword);
-
+        DBRepository.InsertData(this.username, this.password);
         Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
         return new User(newUsername, newPassword);
@@ -213,6 +212,12 @@ public class User
             goto Username;
         }
 
+        if (!DBRepository.ValidateUsernameInput(newUsername))
+        {
+            Console.WriteLine("Username not found, please try again.");
+            goto Username;
+        }
+
         setUsername(newUsername);
 
         /**
@@ -238,7 +243,6 @@ public class User
         setPassword(newPassword);
 
         Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-
         return new User(newUsername, newPassword);
 
     }

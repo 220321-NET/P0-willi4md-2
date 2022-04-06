@@ -1,13 +1,11 @@
 namespace Models;
 
-    public class CarsMenu
+    public class AdminCarMenu
     {
 
         bool isOpen = false;
-        Car[] carCart = new Car[10];
-        int itemsInCart = 0;
 
-        public CarsMenu(bool b)
+        public AdminCarMenu(bool b)
         {
             this.isOpen = b;
         }
@@ -60,23 +58,19 @@ namespace Models;
                     Console.WriteLine("                    Price: $15,599                       ");
                     Console.WriteLine($"                    Inventory: {DBRepository.GetCarStock(int.Parse(firstLetter.ToString()))}                         ");
                     Console.WriteLine("=========================================================");
-                    Console.WriteLine("            To buy this car enter 'B' below.             ");
+                    Console.WriteLine("            To stock this car enter 'S' below.           ");
                     Console.WriteLine("        Or enter 'X' to return to the cars menu.         ");
                     Console.WriteLine("=========================================================");
-                    Car someCar = new Car("Nissan", "ALTRA EV", 15599);
                     try 
                     {
                         string response = Console.ReadLine() ?? "X";
                         response = response.ToUpper().Trim();
                         char[] responseArray = response.ToCharArray();
-                        if (responseArray[0] == 'B') {
+                        if (responseArray[0] == 'S') {
                             Console.WriteLine("------------------------------------------------------------");
-                            Console.WriteLine("         Successfully purchased Nissan ALTRA EV!            ");
-                            Console.WriteLine("To view this order, return to the options menu and press '0'");
+                            Console.WriteLine("         Successfully restocked Nissan ALTRA EV!            ");
                             Console.WriteLine("------------------------------------------------------------");
-                            DBRepository.SendCommand("UPDATE Cars SET Stock = Stock - 1");
-                            carCart[itemsInCart] = someCar;
-                            itemsInCart++;
+                            DBRepository.SendCommand("UPDATE Cars SET Stock = Stock + 1");
                         } else if (responseArray[0] == 'X') {
                             goto CarsMenu;
                         } else {
@@ -99,23 +93,20 @@ namespace Models;
                     Console.WriteLine("                    Price: $24,799                       ");
                     Console.WriteLine($"                    Inventory: {DBRepository.GetCarStock(int.Parse(firstLetter.ToString()))}                         ");
                     Console.WriteLine("=========================================================");
-                    Console.WriteLine("            To buy this car enter 'B' below.             ");
+                    Console.WriteLine("            To stock this car enter 'S' below.           ");
                     Console.WriteLine("        Or enter 'X' to return to the cars menu.         ");
                     Console.WriteLine("=========================================================");
-                    Car someCar2 = new Car("Honda", "CRF230M", 24799);
+
                     try 
                     {
                         string response = Console.ReadLine() ?? "X";
                         response = response.ToUpper().Trim();
                         char[] responseArray = response.ToCharArray();
-                        if (responseArray[0] == 'B') {
+                        if (responseArray[0] == 'S') {
                             Console.WriteLine("------------------------------------------------------------");
-                            Console.WriteLine("         Successfully purchased Honda CRF230M!              ");
-                            Console.WriteLine("To view this order, return to the options menu and press '0'");
+                            Console.WriteLine("         Successfully restocked Honda CRF230M!              ");
                             Console.WriteLine("------------------------------------------------------------");
                             DBRepository.SendCommand("UPDATE Cars SET Stock = Stock - 1");
-                            carCart[itemsInCart] = someCar2;
-                            itemsInCart++;
                         } else if (responseArray[0] == 'X') {
                             goto CarsMenu;
                         } else {
@@ -138,23 +129,20 @@ namespace Models;
                     Console.WriteLine("                    Price: $11,299                       ");
                     Console.WriteLine($"                    Inventory: {DBRepository.GetCarStock(int.Parse(firstLetter.ToString()))}                         ");
                     Console.WriteLine("=========================================================");
-                    Console.WriteLine("            To buy this car enter 'B' below.             ");
+                    Console.WriteLine("            To stock this car enter 'S' below.           ");
                     Console.WriteLine("        Or enter 'X' to return to the cars menu.         ");
                     Console.WriteLine("=========================================================");
-                    Car someCar3 = new Car("Polaris", "600 Switchback", 11299);
+
                     try 
                     {
                         string response = Console.ReadLine() ?? "X";
                         response = response.ToUpper().Trim();
                         char[] responseArray = response.ToCharArray();
-                        if (responseArray[0] == 'B') {
+                        if (responseArray[0] == 'S') {
                             Console.WriteLine("------------------------------------------------------------");
-                            Console.WriteLine("     Successfully purchased Polaris 600 Switchback!         ");
-                            Console.WriteLine("To view this order, return to the options menu and press '0'");
+                            Console.WriteLine("     Successfully restocked Polaris 600 Switchback!         ");
                             Console.WriteLine("------------------------------------------------------------");
-                            DBRepository.SendCommand("UPDATE Cars SET Stock = Stock - 1");
-                            carCart[itemsInCart] = someCar3;
-                            itemsInCart++;
+                            DBRepository.SendCommand("UPDATE Cars SET Stock = Stock + 1");
                         } else if (responseArray[0] == 'X') {
                             goto CarsMenu;
                         } else {
@@ -177,23 +165,20 @@ namespace Models;
                     Console.WriteLine("                    Price: $31,999                       ");
                     Console.WriteLine($"                    Inventory: {DBRepository.GetCarStock(int.Parse(firstLetter.ToString()))}                         ");
                     Console.WriteLine("=========================================================");
-                    Console.WriteLine("            To buy this car enter 'B' below.             ");
+                    Console.WriteLine("            To stock this car enter 'S' below.           ");
                     Console.WriteLine("        Or enter 'X' to return to the cars menu.         ");
                     Console.WriteLine("=========================================================");
-                    Car someCar4 = new Car("Mercedes-Benz", "SLK55 AMG", 31999);
+
                     try 
                     {
                         string response = Console.ReadLine() ?? "X";
                         response = response.ToUpper().Trim();
                         char[] responseArray = response.ToCharArray();
-                        if (responseArray[0] == 'B') {
+                        if (responseArray[0] == 'S') {
                             Console.WriteLine("------------------------------------------------------------");
-                            Console.WriteLine("      Successfully purchased Mercedes Benz SLK55 AMG!       ");
-                            Console.WriteLine("To view this order, return to the options menu and press '0'");
+                            Console.WriteLine("      Successfully restocked Mercedes Benz SLK55 AMG!       ");
                             Console.WriteLine("------------------------------------------------------------");
-                            DBRepository.SendCommand("UPDATE Cars SET Stock = Stock - 1");
-                            carCart[itemsInCart] = someCar4;
-                            itemsInCart++;
+                            DBRepository.SendCommand("UPDATE Cars SET Stock = Stock + 1");
                         } else if (responseArray[0] == 'X') {
                             goto CarsMenu;
                         } else {
@@ -216,23 +201,21 @@ namespace Models;
                     Console.WriteLine("                    Price: $26,599                       ");
                     Console.WriteLine($"                    Inventory: {DBRepository.GetCarStock(int.Parse(firstLetter.ToString()))}                         ");
                     Console.WriteLine("=========================================================");
-                    Console.WriteLine("            To buy this car enter 'B' below.             ");
+                    Console.WriteLine("            To stock this car enter 'S' below.           ");
                     Console.WriteLine("        Or enter 'X' to return to the cars menu.         ");
                     Console.WriteLine("=========================================================");
-                    Car someCar5 = new Car("Audi", "S4", 26599);
+
                     try 
                     {
                         string response = Console.ReadLine() ?? "X";
                         response = response.ToUpper().Trim();
                         char[] responseArray = response.ToCharArray();
-                        if (responseArray[0] == 'B') {
+                        if (responseArray[0] == 'S') {
                             Console.WriteLine("------------------------------------------------------------");
-                            Console.WriteLine("             Successfully purchased Audi S4!                ");
+                            Console.WriteLine("             Successfully restocked Audi S4!                ");
                             Console.WriteLine("To view this order, return to the options menu and press '0'");
                             Console.WriteLine("------------------------------------------------------------");
-                            DBRepository.SendCommand("UPDATE Cars SET Stock = Stock - 1");
-                            carCart[itemsInCart] = someCar5;
-                            itemsInCart++;
+                            DBRepository.SendCommand("UPDATE Cars SET Stock = Stock + 1");
                         } else if (responseArray[0] == 'X') {
                             goto CarsMenu;
                         } else {
@@ -248,7 +231,6 @@ namespace Models;
                     goto CarsMenu;
                     
                 case 'X':
-
                     break;
             }
         }
