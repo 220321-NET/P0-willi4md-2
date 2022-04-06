@@ -21,7 +21,7 @@ public class Options
             this.isOpen = x;
         }
 
-        public void OpenOptionsMenu() 
+        public void OpenOptionsMenu(User u) 
         {
             OpenMenu:
             char[] responseToChar = {'X'};
@@ -61,11 +61,13 @@ public class Options
             switch (firstLetter)
             {
                 case '0':
+                    OrderHistoryMenu orders = new OrderHistoryMenu();
+                    orders.getOrderHistory(u);
                     goto OpenMenu;
 
                 case '1':
                     CarsMenu carsmenu = new CarsMenu(true);
-                    carsmenu.OpenCarsMenu();
+                    carsmenu.OpenCarsMenu(u);
                     goto OpenMenu;
 
                 case '2':
@@ -84,6 +86,7 @@ public class Options
                     goto OpenMenu;
 
                 case 'X':
+                    Console.WriteLine("\n\n" + "Thanks for shopping with us!" + "\n\n\n");
                     break;
 
                 default:

@@ -163,7 +163,9 @@ public class User
         setPassword(newPassword);
         DBRepository.InsertData(this.username, this.password);
         Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-
+        Console.WriteLine("=========================================");
+        Console.WriteLine("         Welcome Back, " + this.username + "!");
+        Console.WriteLine("=========================================" + "\n");       
         return new User(newUsername, newPassword);
     }
 
@@ -243,6 +245,9 @@ public class User
         setPassword(newPassword);
 
         Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        Console.WriteLine("=========================================");
+        Console.WriteLine("         Welcome Back, " + this.username + "!");
+        Console.WriteLine("=========================================" + "\n");        
         return new User(newUsername, newPassword);
 
     }

@@ -213,6 +213,53 @@ using Models;
             }
         }
 
+        public static Order[] getOrderHistory(User u)
+        {
+
+            Order[] orders = new Order[100];
+            int counter = 0;
+
+            try
+            {
+
+                SqlConnection? connection = GetConnection();
+
+                using (connection)
+                {
+                    
+                    connection.Open();       
+
+                    String sql = "SELECT * FROM Orders";
+
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                if (reader.GetString(1) == u.getUsername() || u.getUsername() == "admin") {
+                                    Order thisOrder = new Order(reader.GetInt32(0), reader.GetString(1), reader.GetString(2));
+                                    orders[counter] = thisOrder;
+                                    counter++;
+                                }
+                            }
+                        }
+                    }                    
+                }
+            }
+            catch (SqlException e)
+            {
+                // Log any SQL Exceptions to the logs file indicated below.
+                using (StreamWriter w = File.AppendText("C:/Users/Matthew/Desktop/P0-TWO/DL/logs.txt"))
+                {
+                    Logger.Log(e.ToString(), w);
+                }
+            }
+            return orders;
+        }
+
+        
+
 
         
     }

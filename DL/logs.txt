@@ -112,3 +112,51 @@ Log Entry : 6:56:46 PM Tuesday, April 5, 2022
   :System.IndexOutOfRangeException: Index was outside the bounds of the array.
    at Models.User.LoginMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\User.cs:line 54
 -------------------------------
+
+Log Entry : 11:20:46 PM Tuesday, April 5, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.CarsMenu.OpenCarsMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\CarsMenu.cs:line 39
+-------------------------------
+
+Log Entry : 11:20:48 PM Tuesday, April 5, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.CarsMenu.OpenCarsMenu() in C:\Users\Matthew\Desktop\P0-TWO\Models\CarsMenu.cs:line 39
+-------------------------------
+
+Log Entry : 12:06:23 AM Wednesday, April 6, 2022
+  :
+  :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Models.OrderHistoryMenu.getOrderHistory(User u) in C:\Users\Matthew\Desktop\P0-TWO\Models\OrderHistoryMenu.cs:line 14
+-------------------------------
+
+Log Entry : 12:06:59 AM Wednesday, April 6, 2022
+  :
+  :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Models.OrderHistoryMenu.getOrderHistory(User u) in C:\Users\Matthew\Desktop\P0-TWO\Models\OrderHistoryMenu.cs:line 14
+-------------------------------
+
+Log Entry : 12:08:07 AM Wednesday, April 6, 2022
+  :
+  :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Models.OrderHistoryMenu.getOrderHistory(User u) in C:\Users\Matthew\Desktop\P0-TWO\Models\OrderHistoryMenu.cs:line 14
+-------------------------------
+
+Log Entry : 12:08:32 AM Wednesday, April 6, 2022
+  :
+  :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Models.OrderHistoryMenu.getOrderHistory(User u) in C:\Users\Matthew\Desktop\P0-TWO\Models\OrderHistoryMenu.cs:line 14
+-------------------------------
+
+Log Entry : 12:11:40 AM Wednesday, April 6, 2022
+  :
+  :System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Models.Options.OpenOptionsMenu(User u) in C:\Users\Matthew\Desktop\P0-TWO\Models\Options.cs:line 47
+-------------------------------
+
+Log Entry : 12:13:11 AM Wednesday, April 6, 2022
+  :
+  :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Models.OrderHistoryMenu.getOrderHistory(User u) in C:\Users\Matthew\Desktop\P0-TWO\Models\OrderHistoryMenu.cs:line 14
+-------------------------------

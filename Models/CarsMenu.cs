@@ -4,15 +4,13 @@ namespace Models;
     {
 
         bool isOpen = false;
-        Car[] carCart = new Car[10];
-        int itemsInCart = 0;
 
         public CarsMenu(bool b)
         {
             this.isOpen = b;
         }
 
-        public void OpenCarsMenu() 
+        public void OpenCarsMenu(User u) 
         {
             CarsMenu:
             char[] responseToChar = {'X'};
@@ -75,8 +73,8 @@ namespace Models;
                             Console.WriteLine("To view this order, return to the options menu and press '0'");
                             Console.WriteLine("------------------------------------------------------------");
                             DBRepository.SendCommand("UPDATE Cars SET Stock = Stock - 1");
-                            carCart[itemsInCart] = someCar;
-                            itemsInCart++;
+                            Random rnd = new Random();
+                            DBRepository.InsertOrders(rnd.Next(1, 50000), u.getUsername(), someCar.toString(someCar));
                         } else if (responseArray[0] == 'X') {
                             goto CarsMenu;
                         } else {
@@ -86,7 +84,10 @@ namespace Models;
                     catch (Exception e)
                     {
                         // Write to log with error
-                        Console.WriteLine(e.ToString());
+                        using (StreamWriter w = File.AppendText("C:/Users/Matthew/Desktop/P0-TWO/DL/logs.txt"))
+                        {
+                            Logger.Log(e.ToString(), w);
+                        }
                         goto FirstOption;
                     }             
                     goto CarsMenu;
@@ -114,8 +115,8 @@ namespace Models;
                             Console.WriteLine("To view this order, return to the options menu and press '0'");
                             Console.WriteLine("------------------------------------------------------------");
                             DBRepository.SendCommand("UPDATE Cars SET Stock = Stock - 1");
-                            carCart[itemsInCart] = someCar2;
-                            itemsInCart++;
+                            Random rnd = new Random();
+                            DBRepository.InsertOrders(rnd.Next(1, 50000), u.getUsername(), someCar2.toString(someCar2));
                         } else if (responseArray[0] == 'X') {
                             goto CarsMenu;
                         } else {
@@ -125,7 +126,10 @@ namespace Models;
                     catch (Exception e)
                     {
                         // Write to log with error
-                        Console.WriteLine(e.ToString());
+                        using (StreamWriter w = File.AppendText("C:/Users/Matthew/Desktop/P0-TWO/DL/logs.txt"))
+                        {
+                            Logger.Log(e.ToString(), w);
+                        }
                         goto SecondOption;
                     }             
                     goto CarsMenu;
@@ -153,8 +157,8 @@ namespace Models;
                             Console.WriteLine("To view this order, return to the options menu and press '0'");
                             Console.WriteLine("------------------------------------------------------------");
                             DBRepository.SendCommand("UPDATE Cars SET Stock = Stock - 1");
-                            carCart[itemsInCart] = someCar3;
-                            itemsInCart++;
+                            Random rnd = new Random();
+                            DBRepository.InsertOrders(rnd.Next(1, 50000), u.getUsername(), someCar3.toString(someCar3));
                         } else if (responseArray[0] == 'X') {
                             goto CarsMenu;
                         } else {
@@ -164,7 +168,10 @@ namespace Models;
                     catch (Exception e)
                     {
                         // Write to log with error
-                        Console.WriteLine(e.ToString());
+                        using (StreamWriter w = File.AppendText("C:/Users/Matthew/Desktop/P0-TWO/DL/logs.txt"))
+                        {
+                            Logger.Log(e.ToString(), w);
+                        }
                         goto ThirdOption;
                     }             
                     goto CarsMenu;
@@ -192,8 +199,8 @@ namespace Models;
                             Console.WriteLine("To view this order, return to the options menu and press '0'");
                             Console.WriteLine("------------------------------------------------------------");
                             DBRepository.SendCommand("UPDATE Cars SET Stock = Stock - 1");
-                            carCart[itemsInCart] = someCar4;
-                            itemsInCart++;
+                            Random rnd = new Random();
+                            DBRepository.InsertOrders(rnd.Next(1, 50000), u.getUsername(), someCar4.toString(someCar4));
                         } else if (responseArray[0] == 'X') {
                             goto CarsMenu;
                         } else {
@@ -203,7 +210,10 @@ namespace Models;
                     catch (Exception e)
                     {
                         // Write to log with error
-                        Console.WriteLine(e.ToString());
+                        using (StreamWriter w = File.AppendText("C:/Users/Matthew/Desktop/P0-TWO/DL/logs.txt"))
+                        {
+                            Logger.Log(e.ToString(), w);
+                        }
                         goto FourthOption;
                     }             
                     goto CarsMenu;
@@ -231,8 +241,8 @@ namespace Models;
                             Console.WriteLine("To view this order, return to the options menu and press '0'");
                             Console.WriteLine("------------------------------------------------------------");
                             DBRepository.SendCommand("UPDATE Cars SET Stock = Stock - 1");
-                            carCart[itemsInCart] = someCar5;
-                            itemsInCart++;
+                            Random rnd = new Random();
+                            DBRepository.InsertOrders(rnd.Next(1, 50000), u.getUsername(), someCar5.toString(someCar5));
                         } else if (responseArray[0] == 'X') {
                             goto CarsMenu;
                         } else {
@@ -242,14 +252,19 @@ namespace Models;
                     catch (Exception e)
                     {
                         // Write to log with error
-                        Console.WriteLine(e.ToString());
+                        using (StreamWriter w = File.AppendText("C:/Users/Matthew/Desktop/P0-TWO/DL/logs.txt"))
+                        {
+                            Logger.Log(e.ToString(), w);
+                        }
                         goto FifthOption;
                     }             
                     goto CarsMenu;
                     
                 case 'X':
-
                     break;
+
+                default:
+                    goto CarsMenu;
             }
         }
         
